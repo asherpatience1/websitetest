@@ -1,4 +1,4 @@
-import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader'
+import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader.js'
 
 export function load(url: string): Promise<THREE.Group> {
   return new Promise(resolve => new OBJLoader().load(url, obj => resolve(obj)))
