@@ -1,4 +1,4 @@
-<p>Engineering and Software Development outsourcing made easy.</p>
+<p>Outsourcing for your <strong>Engineering</strong> and<br/> <strong>Software Development</strong>&mdash;simplified.</p>
 
 <style>
   p {
@@ -8,5 +8,9 @@
     text-align: center;
     color: #0177ff;
     font-weight: 600;
+  }
+  p strong {
+    font-weight: 600;
+    color: #014480;
   }
 </style>
