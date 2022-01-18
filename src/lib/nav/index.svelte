@@ -43,7 +43,10 @@
   }
   @media screen and (max-width: 500px) {
     nav ul {
-      display: none;
+      gap: 0.5rem;
+    }
+    nav li a {
+      width: 5rem;
     }
   }
 </style>
