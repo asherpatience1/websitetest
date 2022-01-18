@@ -16,9 +16,21 @@
   <World />
 </div>
 
-<slot/>
+<main>
+  <div class="content">
+    <slot/>
+  </div>
+</main>
 
 <style>
+  main {
+    background: linear-gradient(#fff, #fff0);
+    padding: 2rem 2rem 4rem;
+  }
+  .content {
+    margin: 0 auto;
+    max-width: 50rem;
+  }
   .bg {
     pointer-events: none;
     position: fixed;
