@@ -1,4 +1,5 @@
 <script lang="ts">
+  import "@fontsource/rationale"
   import './app.css'
 
   import { Header, Nav, World } from '$lib'
