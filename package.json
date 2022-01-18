@@ -32,6 +32,7 @@
   "dependencies": {
     "@fontsource/rationale": "^4.5.1",
     "svelte-cubed": "^0.2.1",
+    "svelte-typewriter": "^3.0.0-alpha.6",
     "three": "^0.136.0"
   }
 }
