@@ -1,15 +1,27 @@
-<p>Outsourcing for your <strong>Engineering</strong> and<br/> <strong>Software Development</strong>&mdash;simplified.</p>
+<script lang="ts">
+  import Typewriter from 'svelte-typewriter'
+</script>
+
+<h2>
+  <Typewriter scramble={2000} cascadeSlowdown={true}>
+    <span>Outsourcing for your</span>
+    <strong>Engineering</strong>
+    <span>and</span>
+    <strong>Software Development</strong><span>&mdash;simplified.</span>
+  </Typewriter>
+</h2>
+
 
 <style>
-  p {
+  h2 {
+    max-width: 36rem;
     font-size: 2.5rem;
-    max-width: 90vw;
     margin: 0 auto;
     text-align: center;
     color: #0177ff;
     font-weight: 600;
   }
-  p strong {
+  strong {
     font-weight: 600;
     color: #014480;
   }
