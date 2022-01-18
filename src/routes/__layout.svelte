@@ -1,0 +1,32 @@
+<script lang="ts">
+  import './app.css'
+
+  import { Header, Nav, World } from '$lib'
+</script>
+
+<svelte:head>
+  <title>DIOVEC - Professional Services</title>
+</svelte:head>
+
+<Header />
+<Nav />
+
+<div class="bg">
+  <World />
+</div>
+
+<slot/>
+
+<style>
+  .bg {
+    pointer-events: none;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+</style>
