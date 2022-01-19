@@ -1,31 +1,37 @@
+<script lang="ts">
+  const map = [
+    {
+      name: "Engineering",
+      services: [
+        { label: "BIM", href: "bim" },
+        { label: "Structural", href: "structural-engineering" },
+        { label: "Civil", href: "civil-engineering" },
+      ],
+    },
+    {
+      name: "Software Development",
+      services: [
+        { label: "Desktop", href: "desktop-software" },
+        { label: "Mobile", href: "mobile-software" },
+        { label: "Web", href: "web-software" },
+        { label: "Games", href: "games" },
+      ],
+    },
+  ]
+
+</script>
+
 <h2>Services</h2>
 
 <ul>
+  {#each map as { name, services }}
   <li>
-    <h3><a href="/services/spacial">SPATIAL DATA</a></h3>
+    <h3>{name}</h3>
     <ul>
-      <li>POINT CLOUDS</li>
-      <li>LASER SCANNING</li>
-      <li>PHOTOGRAMMETRY</li>
-      <li>PROCEDURAL GEOMETRY</li>
+      {#each services as { label, href }}
+        <li><a href="/services/{href}">{label}</a></li>
+      {/each}
     </ul>
   </li>
-  <li>
-    <h3><a href="/services/programming">PROGRAMMING</a></h3>
-    <ul>
-      <li>C#</li>
-      <li>JS</li>
-    </ul>
-  </li>
-  <li>
-    <h3><a href="/services/frameworks">FRAMEWORKS &amp; ENGINES</a></h3>
-    <ul>
-      <li>UNITY3D</li>
-      <li>.NET</li>
-      <li>MONO</li>
-      <li>NODEJS</li>
-      <li>WEBGL</li>
-      <li>THREEJS</li>
-    </ul>
-  </li>
+{/each}
 </ul>
