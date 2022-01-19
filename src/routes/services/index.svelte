@@ -2,7 +2,7 @@
 
 <ul>
   <li>
-    <h3>SPATIAL DATA</h3>
+    <h3><a href="/services/spacial">SPATIAL DATA</a></h3>
     <ul>
       <li>POINT CLOUDS</li>
       <li>LASER SCANNING</li>
@@ -11,14 +11,14 @@
     </ul>
   </li>
   <li>
-    <h3>PROGRAMMING</h3>
+    <h3><a href="/services/programming">PROGRAMMING</a></h3>
     <ul>
       <li>C#</li>
       <li>JS</li>
     </ul>
   </li>
   <li>
-    <h3>FRAMEWORKS &amp; ENGINES</h3>
+    <h3><a href="/services/frameworks">FRAMEWORKS &amp; ENGINES</a></h3>
     <ul>
       <li>UNITY3D</li>
       <li>.NET</li>
