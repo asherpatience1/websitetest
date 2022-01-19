@@ -7,6 +7,9 @@
 <style>
   header {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    background: #fffd;
   }
   header a {
     background: transparent url('/diovec.png') no-repeat 50% 50%;
@@ -14,6 +17,8 @@
     font-size: 0px;
     height: 10vh;
     width: 45vh;
+    min-width: 300px;
+    min-height: 100px;
     display: inline-block;
   }
 </style>

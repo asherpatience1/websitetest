@@ -24,8 +24,9 @@
 
 <style>
   main {
-    background: linear-gradient(#fff, #fff0);
+    background: linear-gradient(#fffd, #fff0);
     padding: 2rem 2rem 4rem;
+    flex-grow: 1;
   }
   .content {
     margin: 0 auto;

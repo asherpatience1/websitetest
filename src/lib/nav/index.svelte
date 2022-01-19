@@ -17,6 +17,9 @@
 </nav>
 
 <style>
+  nav {
+    background: #fffd;
+  }
   nav ul {
     list-style: none;
     display: flex;
