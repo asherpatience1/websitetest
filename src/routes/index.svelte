@@ -3,7 +3,7 @@
 </script>
 
 <h2>
-  <Typewriter scramble={2000} cascadeSlowdown={true}>
+  <Typewriter scramble={2000}>
     <span>Outsourcing for your</span>
     <strong>Engineering</strong>
     <span>and</span>
