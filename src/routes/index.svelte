@@ -25,4 +25,12 @@
     font-weight: 600;
     color: #014480;
   }
+
+  @media screen and (min-width: 600px) {
+    h2 {
+      height: 92px;
+      overflow-y: hidden;
+    }
+  }
+
 </style>
