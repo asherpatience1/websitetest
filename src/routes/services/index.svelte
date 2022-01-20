@@ -23,6 +23,8 @@
 
 <h2>Services</h2>
 
+<p>We provide a wide array of professional services to meet all of your outsourcing needs in the fields of engineering and software development.</p>
+
 <ul>
   {#each map as { name, services }}
   <li>

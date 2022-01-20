@@ -3,8 +3,8 @@
 </script>
 
 <section>
-  {#if $page.url.pathname !== '/projects'}
-    <p><a href="/projects">Projects</a> &rsaquo;</p>
+  {#if $page.url.pathname !== '/services'}
+    <p><a href="/services">Services</a> &rsaquo;</p>
   {/if}
   <slot />
 </section>
