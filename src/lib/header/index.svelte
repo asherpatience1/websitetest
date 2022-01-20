@@ -17,6 +17,7 @@
     font-size: 0px;
     height: 10vh;
     width: 45vh;
+    max-width: 90vw;
     min-width: 300px;
     min-height: 100px;
     display: inline-block;
