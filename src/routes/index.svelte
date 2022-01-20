@@ -38,12 +38,15 @@
 
 <Carousel>
   {#each clients as { src, alt }}
-    <img {src} {alt} />
+    <img class="client" {src} {alt} />
   {/each}
 </Carousel>
 
 
 <style>
+  .client {
+    filter: drop-shadow(2px 4px 4px #0005);
+  }
   .pad {
     padding: 0 2rem;
   }
