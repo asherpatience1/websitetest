@@ -7,7 +7,10 @@
   export const load: Load = async () => {
     return {
       props: {
-        clients: Object.keys(clients).map(f => f.substring(prefix.length))
+        clients: Object.keys(clients).map(f => ({
+          src: f.substring(prefix.length),
+          alt: f.substring(prefix.length + 9, f.length - 4),
+        }))
       }
     }
   }
@@ -17,7 +20,7 @@
   import Typewriter from 'svelte-typewriter'
   import { Carousel } from '$lib'
 
-  export let clients: string[]
+  export let clients: { src: string, alt: string }[]
 </script>
 
 <div class="pad">
@@ -34,8 +37,8 @@
 </div>
 
 <Carousel>
-  {#each clients as src}
-    <img {src} alt="client" />
+  {#each clients as { src, alt }}
+    <img {src} {alt} />
   {/each}
 </Carousel>
 
@@ -55,6 +58,7 @@
   h3 {
     text-transform: uppercase;
     margin-top: 25vh;
+    margin-bottom: 0.5rem;
     text-align: center;
   }
   strong {
