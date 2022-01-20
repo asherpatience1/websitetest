@@ -38,14 +38,21 @@
 
 <Carousel>
   {#each clients as { src, alt }}
-    <img class="client" {src} {alt} />
+    <div class="client-wrap">
+      <img class="client" {src} {alt} />
+    </div>
   {/each}
 </Carousel>
 
 
 <style>
+  .client-wrap {
+    padding: 5px;
+    box-sizing: border-box;
+  }
   .client {
     filter: drop-shadow(2px 4px 4px #0005);
+    width: 100%;
   }
   .pad {
     padding: 0 2rem;
