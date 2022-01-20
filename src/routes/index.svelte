@@ -83,4 +83,10 @@
     }
   }
 
+  @media screen and (max-width: 560px) {
+    h3 {
+      margin-top: 12vh;
+    }
+  }
+
 </style>
