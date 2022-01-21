@@ -2,10 +2,10 @@
   "name": "www",
   "version": "0.0.1",
   "scripts": {
-    "dev": "svelte-kit dev --host",
+    "dev": "node -r dotenv/config node_modules/.bin/svelte-kit dev --host",
     "build": "svelte-kit build",
     "package": "svelte-kit package",
-    "preview": "svelte-kit preview",
+    "preview": "node -r dotenv/config node_modules/.bin/svelte-kit preview --host",
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
     "lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
@@ -17,6 +17,7 @@
     "@types/three": "^0.136.1",
     "@typescript-eslint/eslint-plugin": "^4.31.1",
     "@typescript-eslint/parser": "^4.31.1",
+    "dotenv": "^14.2.0",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-svelte3": "^3.2.1",
@@ -32,6 +33,7 @@
   "type": "module",
   "dependencies": {
     "@fontsource/rationale": "^4.5.1",
+    "sib-api-v3-sdk": "^8.2.1",
     "svelte-cubed": "^0.2.1",
     "svelte-typewriter": "^3.0.0-alpha.6",
     "three": "^0.136.0"
