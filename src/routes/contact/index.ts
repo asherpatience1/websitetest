@@ -4,7 +4,7 @@ import type { RequestHandler } from '@sveltejs/kit'
 import type { ReadOnlyFormData } from '@sveltejs/kit/types/helper'
 
 // register API key if it exists
-if (import.meta.env.SENDINBLUE_APIKEY) {
+if (process.env.SENDINBLUE_APIKEY) {
   SibApiV3Sdk.ApiClient.instance.authentications['api-key'].apiKey = process.env.SENDINBLUE_APIKEY
 }
 

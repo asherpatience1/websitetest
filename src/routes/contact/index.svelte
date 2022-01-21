@@ -19,6 +19,12 @@
   let disabled = false
   let accepted = false
 
+  let name = ''
+  let email = ''
+  let body = ''
+
+  $: complete = name.trim() && email.trim() && body.trim()
+
   async function handleSubmit(e: SubmitEvent) {
 
     disabled = true
@@ -49,23 +55,28 @@
     {:else}
       <p>Let us take care of your outsourcing and development needs.</p>
 
-      <form {disabled} method="POST" on:submit|preventDefault={handleSubmit}>
+      <form disabled={disabled || !complete} method="POST" on:submit|preventDefault={handleSubmit}>
         <label>
           <span>Name</span>
-          <input {disabled} type="text" name="name" />
+          <input {disabled} type="text" name="name" bind:value={name} />
         </label>
 
         <label>
           <span>Email</span>
-          <input {disabled} type="email" name="email" />
+          <input {disabled} type="email" name="email" bind:value={email} />
         </label>
 
         <label>
           <span>Message</span>
-          <textarea {disabled} name="body"></textarea>
+          <textarea {disabled} name="body" bind:value={body}></textarea>
         </label>
 
-        <button {disabled} type="submit">Submit</button>
+        <label>
+          <button disabled={disabled || !complete} type="submit">Send</button>
+          {#if !complete}
+            <span class="help">Fill out all fields</span>
+          {/if}
+        </label>
       </form>
     {/if}
   {:else}
@@ -77,6 +88,12 @@
 </section>
 
 <style>
+  .help {
+    display: inline;
+    background: #fff6;
+    color: #333;
+    margin-left: 4px;
+  }
   section {
     padding: 0 1.5rem;
   }
@@ -117,5 +134,12 @@
     margin-top: 1rem;
     text-transform: uppercase;
     cursor: pointer;
+    border-radius: 4px;
+  }
+  button:disabled {
+    opacity: 0.9;
+    background: #ccc;
+    color: #666;
+    cursor: default;
   }
 </style>
