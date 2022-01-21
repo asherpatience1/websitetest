@@ -5,7 +5,7 @@ html, body {
 }
 
 body {
-  font-family: Rationale, Lato, sans-serif;
+  font-family: Yantramanav, sans-serif;
   font-size: 20px;
 }
 
@@ -13,6 +13,10 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: Rationale, sans-serif;
 }
 
 h2 {
@@ -29,6 +33,7 @@ h3 {
 p, li {
   color: #0177ff;
   font-weight: 600;
+  font-size: 17px;
 }
 
 strong {
@@ -38,4 +43,8 @@ strong {
 
 a {
   color: #014480;
+}
+
+footer h2, footer h3, footer p, footer li, footer a {
+  color: #fffd;
 }

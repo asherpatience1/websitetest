@@ -19,6 +19,7 @@
 <style>
   nav {
     background: #fffd;
+    font-family: Yantramanav, sans-serif;
   }
   nav ul {
     list-style: none;
@@ -26,9 +27,6 @@
     justify-content: center;
     gap: 2rem;
     padding: 0;
-  }
-  nav .selected a {
-    background: #5599ff;
   }
   nav li a {
     text-transform: uppercase;
@@ -43,10 +41,17 @@
     display: inline-block;
     text-align: center;
     font-size: 1.125rem;
+    box-shadow: 0 2px 4px #01448099;
   }
   nav li a:hover, nav li a:focus {
     background-color: #014480;
+    box-shadow: 0 2px 6px 1px #01448066;
   }
+  nav li.selected a {
+    background: #5599ff;
+    box-shadow: 0 0 0 #5599ff;
+  }
+
 
   @media screen and (max-width: 560px) {
     nav ul {
@@ -55,10 +60,10 @@
   }
   @media screen and (max-width: 500px) {
     nav ul {
-      gap: 1rem;
+      gap: 0.8125rem;
     }
     nav li a {
-      width: 6rem;
+      width: 6.5rem;
     }
   }
   @media screen and (max-width: 400px) {
@@ -67,6 +72,7 @@
     }
     nav li a {
       width: 5rem;
+      font-size: 14px;
     }
   }
 </style>

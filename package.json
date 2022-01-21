@@ -32,7 +32,7 @@
   },
   "type": "module",
   "dependencies": {
-    "@fontsource/rationale": "^4.5.1",
+    "@fontsource/yantramanav": "^4.5.0",
     "sib-api-v3-sdk": "^8.2.1",
     "svelte-cubed": "^0.2.1",
     "svelte-typewriter": "^3.0.0-alpha.6",
