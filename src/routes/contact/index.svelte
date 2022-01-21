@@ -1,19 +1,121 @@
+<script lang="ts" context="module">
+  import type { Load } from '@sveltejs/kit'
+
+  export const load: Load = async ({ fetch }) => {
+    const r = await fetch('/contact/enabled.json')
+    const j = await r.json()
+
+    return {
+      props: {
+        formEnabled: JSON.parse(j),
+      }
+    }
+  }
+</script>
+
 <script lang="ts">
-  const addr = "hello@diovec.com"
+  export let formEnabled: boolean
+
+  let disabled = false
+  let accepted = false
+
+  async function handleSubmit(e: SubmitEvent) {
+
+    disabled = true
+
+    const r = await fetch('/contact', {
+      method: 'POST',
+      body: new FormData(e.target as HTMLFormElement),
+    })
+
+    if (r.ok) {
+      accepted = true
+    } else {
+      console.error('Bad request')
+    }
+
+    disabled = false
+  }
+
 </script>
 
 <section>
   <h2>Contact</h2>
 
-  <p>Let us take care of your outsourcing and development needs.</p>
+  {#if formEnabled}
+    {#if accepted}
+      <h3>Thanks for that!</h3>
+      <p>Your inquiry has been received, we'll be in touch via email very soon!</p>
+    {:else}
+      <p>Let us take care of your outsourcing and development needs.</p>
 
-  <p>
-    Email: <a href="mailto:{addr}">{addr}</a>
-  </p>
+      <form {disabled} method="POST" on:submit|preventDefault={handleSubmit}>
+        <label>
+          <span>Name</span>
+          <input {disabled} type="text" name="name" />
+        </label>
+
+        <label>
+          <span>Email</span>
+          <input {disabled} type="email" name="email" />
+        </label>
+
+        <label>
+          <span>Message</span>
+          <textarea {disabled} name="body"></textarea>
+        </label>
+
+        <button {disabled} type="submit">Submit</button>
+      </form>
+    {/if}
+  {:else}
+      <p>
+        Email: <a href="mailto:hello@diovec.com">hello@diovec.com</a>
+      </p>
+  {/if}
+
 </section>
 
 <style>
   section {
     padding: 0 1.5rem;
+  }
+  label {
+    display: block;
+    margin-top: 1rem;
+  }
+  form {
+    max-width: 35rem;
+  }
+  form:disabled {
+    opacity: 0.5;
+  }
+  label span {
+    display: block;
+    font-size: 0.75rem;
+    margin-bottom: 0.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #014480;
+  }
+  label input, label textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px 6px;
+    display: block;
+    font: inherit;
+    font-size: 0.875rem;
+    resize: vertical;
+  }
+  button {
+    background: #014480;
+    color: white;
+    font-family: Rationale, sans-serif;
+    border: none;
+    font-size: 1.125rem;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
   }
 </style>
