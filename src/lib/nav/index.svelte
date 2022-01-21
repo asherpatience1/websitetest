@@ -11,7 +11,7 @@
 <nav>
   <ul>
     {#each links as { href, label }}
-      <li class:selected={$page.url.pathname === href}><a {href}>{label}</a></li>
+      <li class:selected={$page.url.pathname.startsWith(href)}><a {href}>{label}</a></li>
     {/each}
   </ul>
 </nav>
