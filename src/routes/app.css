@@ -38,22 +38,22 @@ p, li {
 article li, article p {
   color: black;
   text-shadow:
-   6px  6px 10px #fffd,
-  -6px  6px 10px #fffd,
-  -6px -6px 10px #fffd,
-   6px -6px 10px #fffd,
-   6px  6px 10px #fffd,
-  -6px  6px 10px #fffd,
-  -6px -6px 10px #fffd,
-   6px -6px 10px #fffd,
-   6px  6px 10px #fffd,
-  -6px  6px 10px #fffd,
-  -6px -6px 10px #fffd,
-   6px -6px 10px #fffd,
-   6px  6px 10px #fffd,
-  -6px  6px 10px #fffd,
-  -6px -6px 10px #fffd,
-   6px -6px 10px #fffd;
+   3px  3px 6px #fffd,
+  -3px  3px 6px #fffd,
+  -3px -3px 6px #fffd,
+   3px -3px 6px #fffd,
+   3px  3px 6px #fffd,
+  -3px  3px 6px #fffd,
+  -3px -3px 6px #fffd,
+   3px -3px 6px #fffd,
+   3px  3px 6px #fffd,
+  -3px  3px 6px #fffd,
+  -3px -3px 6px #fffd,
+   3px -3px 6px #fffd,
+   3px  3px 6px #fffd,
+  -3px  3px 6px #fffd,
+  -3px -3px 6px #fffd,
+   3px -3px 6px #fffd;
 }
 
 strong {
