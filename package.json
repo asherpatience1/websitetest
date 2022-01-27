@@ -14,6 +14,7 @@
   "devDependencies": {
     "@sveltejs/adapter-auto": "next",
     "@sveltejs/kit": "next",
+    "@types/marked": "^4.0.1",
     "@types/three": "^0.136.1",
     "@typescript-eslint/eslint-plugin": "^4.31.1",
     "@typescript-eslint/parser": "^4.31.1",
@@ -34,6 +35,7 @@
   "dependencies": {
     "@fontsource/rationale": "^4.5.1",
     "@fontsource/yantramanav": "^4.5.0",
+    "marked": "^4.0.11",
     "sib-api-v3-sdk": "^8.2.1",
     "svelte-cubed": "^0.2.1",
     "svelte-typewriter": "^3.0.0-alpha.6",
