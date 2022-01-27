@@ -31,7 +31,7 @@
   })
 
   let object: THREE.Group
-  let spin = 0
+  let spin = 0.6
 
   let scale: Tweened<number>
   let pos: Tweened<number>
