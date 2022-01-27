@@ -18,7 +18,6 @@
 
 <style>
   nav {
-    background: #fffd;
     font-family: Yantramanav, sans-serif;
   }
   nav ul {

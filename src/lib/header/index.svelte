@@ -9,7 +9,6 @@
     text-align: center;
     display: flex;
     flex-direction: column;
-    background: #fffd;
   }
   header a {
     background: transparent url('/diovec.png') no-repeat 50% 50%;

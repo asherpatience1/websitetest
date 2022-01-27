@@ -25,13 +25,23 @@
 
 <style>
   main {
-    background: linear-gradient(#fffd, #fff4);
     padding: 2rem 0 4rem;
     flex-grow: 1;
   }
   .content {
     margin: 0 auto;
     max-width: 50rem;
+  }
+  .bg::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#ffff 10%, #fff4);
+    z-index: 1;
   }
   .bg {
     pointer-events: none;
