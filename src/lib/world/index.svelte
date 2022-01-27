@@ -16,7 +16,7 @@
   const SCALE_LARGE = 5
 
   const POS_SMALL = -4
-  const POS_LARGE = -7.5
+  const POS_LARGE = -3.5
 
   let tt: NodeJS.Timeout
 
