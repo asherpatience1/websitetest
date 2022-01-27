@@ -21,7 +21,6 @@
   let tt: NodeJS.Timeout
 
   beforeNavigate(() => {
-    console.log('spin the world fast plz')
     spinrate.set(SPIN_FAST)
 
     if (tt) {
