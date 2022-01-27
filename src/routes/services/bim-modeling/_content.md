@@ -17,7 +17,7 @@ stages, and as-built status.
 * Dynamo
 * Navisworks
 
-<img src="/services/bim-2.png" class="right">
+<img src="/services/bim-2.png" class="right" />
 
 As part of our BIM modeling services, we can integrate BIM models within
 Autodesk’s integrated cloud collaboration platforms.
