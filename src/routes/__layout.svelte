@@ -23,8 +23,6 @@
   </div>
 </main>
 
-<Footer />
-
 <style>
   main {
     background: linear-gradient(#fffd, #fff4);
