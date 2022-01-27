@@ -1,24 +1,30 @@
 import type { RequestHandler } from '@sveltejs/kit'
 
-const markdowns = import.meta.glob('./*/_content.md')
-const metas = import.meta.glob('./*/_meta.json')
-
-const content = {}
-const meta = {}
-
-for (let name in markdowns) {
-  const dir = name.substring(2, name.length - 12)
-  content[dir] = import(/* @vite-ignore */`${name}?raw`)
+// TODO: replace this hardcoding with glob when Vite properly supports raw import
+const content = {
+  'bim-modeling': import('./bim-modeling/_content.md?raw'),
+  'mep-design': import('./mep-design/_content.md?raw'),
+  'scan-to-bim': import('./scan-to-bim/_content.md?raw'),
 }
 
-for (let name in metas) {
-  const dir = name.substring(2, name.length - 11)
-  meta[dir] = import(/* @vite-ignore */`${name}`)
+const meta = {
+  'bim-modeling': import('./bim-modeling/_meta.json'),
+  'mep-design': import('./mep-design/_meta.json'),
+  'scan-to-bim': import('./scan-to-bim/_meta.json'),
 }
+
+// const markdowns = import.meta.globEager('./*/_content.md', { assert: { type: 'raw' }})
+// const content = {}
+// const meta = {}
+// for (let name in markdowns) {
+//   const dir = name.slice(2, -'/_content.md'.length)
+//   content[dir] = markdowns[name]
+//   meta[dir] = import(`./${dir}/_meta.json`)
+// }
 
 export const get: RequestHandler = async ({ params }) => {
 
-  if (!(params.slug in content)) {
+  if (!(params.slug in content && params.slug in meta)) {
     return {
       status: 404,
     }
