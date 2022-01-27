@@ -25,13 +25,33 @@
 
   $: complete = name.trim() && email.trim() && body.trim()
 
+  const recaptcha = async (): Promise<string> => new Promise((resolve, reject) => {
+    if (!('grecaptcha' in window)) {
+      reject('Recaptcha not loaded')
+    }
+
+    window['grecaptcha'].ready(async () => {
+      try {
+        resolve(await window['grecaptcha'].execute(import.meta.env.VITE_RECAPTCHA_SITE_KEY, { action: 'contact_form_submit' }))
+      } catch (e) {
+        reject(e)
+      }
+    })
+  })
+
   async function handleSubmit(e: SubmitEvent) {
 
     disabled = true
 
+    const body = new FormData(e.target as HTMLFormElement)
+
+    if (import.meta.env.VITE_RECAPTCHA_SITE_KEY) {
+      body.set('g-recaptcha-response', await recaptcha())
+    }
+
     const r = await fetch('/contact', {
       method: 'POST',
-      body: new FormData(e.target as HTMLFormElement),
+      body,
     })
 
     if (r.ok) {
@@ -43,7 +63,15 @@
     disabled = false
   }
 
+
+
 </script>
+
+<svelte:head>
+  {#if import.meta.env.VITE_RECAPTCHA_SITE_KEY}
+    <script src="https://www.google.com/recaptcha/api.js?render={import.meta.env.VITE_RECAPTCHA_SITE_KEY}"></script>
+  {/if}
+</svelte:head>
 
 <section>
   <h2>Contact</h2>
