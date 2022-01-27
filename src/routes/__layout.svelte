@@ -23,9 +23,11 @@
   </div>
 </main>
 
+<Footer />
+
 <style>
   main {
-    background: linear-gradient(#fffd, #fff0);
+    background: linear-gradient(#fffd, #fff4);
     padding: 2rem 0 4rem;
     flex-grow: 1;
   }
