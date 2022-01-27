@@ -12,7 +12,7 @@
 </script>
 
 <script lang="ts">
-  import { parse } from 'marked'
+  import { marked } from 'marked'
 
   export let markdown: string
   export let metadata: Record<string, any>
@@ -24,14 +24,9 @@
 
 <h2>{metadata.title}</h2>
 
-<article>{@html parse(markdown || '')}</article>
+<article>{@html marked(markdown || '')}</article>
 
 <style>
-  article :global(p),
-  article :global(li) {
-    color: black;
-    font-weight: 300;
-  }
   article :global(img) {
     width: 400px;
     max-width: calc(100vw - 4rem);
