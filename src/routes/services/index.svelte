@@ -3,9 +3,9 @@
     {
       name: "Engineering",
       services: [
-        { label: "BIM", href: "bim" },
-        { label: "Structural", href: "structural-engineering" },
-        { label: "Civil", href: "civil-engineering" },
+        { label: "BIM Modeling", href: "bim-modeling" },
+        { label: "MEP Design", href: "mep-design" },
+        { label: "Scan to BIM", href: "scan-to-bim" },
       ],
     },
     {
