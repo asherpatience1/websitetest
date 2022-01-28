@@ -19,7 +19,7 @@
 </script>
 
 <svelte:head>
-  <title>{metadata.title}</title>
+  <title>DIOVEC - {metadata.title}</title>
 </svelte:head>
 
 <h2>{metadata.title}</h2>

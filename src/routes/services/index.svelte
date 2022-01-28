@@ -11,15 +11,18 @@
     {
       name: "Software Development",
       services: [
-        { label: "Desktop", href: "desktop-software" },
-        { label: "Mobile", href: "mobile-software" },
-        { label: "Web", href: "web-software" },
-        { label: "Games", href: "games" },
+        { label: "Outsourcing and Augmentation", href: "outsourcing-and-augmentation" },
+        { label: "Engineering and Spacial", href: "engineering-and-spacial" },
+        { label: "Game Development", href: "game-development" },
       ],
     },
   ]
 
 </script>
+
+<svelte:head>
+  <title>DIOVEC - Professional Services</title>
+</svelte:head>
 
 <h2>Services</h2>
 

@@ -2,15 +2,27 @@ import type { RequestHandler } from '@sveltejs/kit'
 
 // TODO: replace this hardcoding with glob when Vite properly supports raw import
 const content = {
+  // engineering
   'bim-modeling': import('./bim-modeling/_content.md?raw'),
   'mep-design': import('./mep-design/_content.md?raw'),
   'scan-to-bim': import('./scan-to-bim/_content.md?raw'),
+
+  // software
+  'outsourcing-and-augmentation': import('./outsourcing-and-augmentation/_content.md?raw'),
+  'engineering-and-spacial': import('./engineering-and-spacial/_content.md?raw'),
+  'game-development': import('./game-development/_content.md?raw'),
 }
 
 const meta = {
+  // engineering
   'bim-modeling': import('./bim-modeling/_meta.json'),
   'mep-design': import('./mep-design/_meta.json'),
   'scan-to-bim': import('./scan-to-bim/_meta.json'),
+
+  // software
+  'outsourcing-and-augmentation': import('./outsourcing-and-augmentation/_meta.json'),
+  'engineering-and-spacial': import('./engineering-and-spacial/_meta.json'),
+  'game-development': import('./game-development/_meta.json'),
 }
 
 // const markdowns = import.meta.globEager('./*/_content.md', { assert: { type: 'raw' }})
