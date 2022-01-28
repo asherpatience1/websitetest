@@ -23,6 +23,10 @@
   export let clients: { src: string, alt: string }[]
 </script>
 
+<svelte:head>
+  <title>DIOVEC - Professional Services</title>
+</svelte:head>
+
 <div class="pad">
   <h2>
     <Typewriter scramble={2000}>
