@@ -12,7 +12,7 @@
       name: "Software Development",
       services: [
         { label: "Outsourcing and Augmentation", href: "outsourcing-and-augmentation" },
-        { label: "Engineering and Spacial", href: "engineering-and-spacial" },
+        { label: "Engineering and Spatial", href: "engineering-and-spatial" },
         { label: "Game Development", href: "game-development" },
       ],
     },
