@@ -30,12 +30,9 @@ h3 {
   color: #014480;
 }
 
-p, li {
+main p, main li {
   font-weight: 300;
   font-size: 17px;
-}
-
-article li, article p {
   color: black;
   text-shadow:
    3px  3px 6px #fffd,
