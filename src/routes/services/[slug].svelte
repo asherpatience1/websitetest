@@ -43,7 +43,7 @@
     clear: both;
   }
   article :global(.icon) {
-    width: 55px;
+    width: 60px;
     max-width: 25vw;
   }
 </style>
