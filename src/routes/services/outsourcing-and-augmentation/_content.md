@@ -22,7 +22,6 @@ catering to many specialized needs.
 <img class="icon" title="Android" alt="Android" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" />
 <img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/digitalocean/digitalocean-original.svg" />
 <img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" />
-<img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gimp/gimp-original.svg" />
 <img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
 <img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
 <img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" />
