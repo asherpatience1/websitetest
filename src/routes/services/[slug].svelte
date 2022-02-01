@@ -27,10 +27,7 @@
 <article>{@html marked(markdown || '')}</article>
 
 <style>
-  article :global(img) {
-    width: 400px;
-    max-width: calc(100vw - 4rem);
-  }
+
   article :global(.left) {
     float: left;
     margin-right: 1rem;
