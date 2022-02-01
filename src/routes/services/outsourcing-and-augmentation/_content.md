@@ -9,3 +9,6 @@ catering to many specialized needs.
 ### Languages and Frameworks
 
 { icons of languages and frameworks }
+
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" />
