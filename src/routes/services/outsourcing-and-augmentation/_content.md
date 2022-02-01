@@ -10,5 +10,5 @@ catering to many specialized needs.
 
 { icons of languages and frameworks }
 
-<img width="100" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" />
-<img width="100" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" />
+<img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" />
+<img class="icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" />
