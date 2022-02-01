@@ -6,7 +6,7 @@ Whether you require a team for a one-off project, or want to augment your
 existing team with more staff, we provide qualified and skilled developers
 catering to many specialized needs.
 
-### Languages
+### Languages & Frameworks
 
 <img class="icon" title="C#" alt="C#" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" />
 <img class="icon" title=".NET" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original-wordmark.svg" />
@@ -16,17 +16,17 @@ catering to many specialized needs.
 <img class="icon" title="CSS3" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
 <img class="icon" title="HTML5" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
 <img class="icon" title="PHP" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" />
-
-### DESIGN & GAMES
-<img class="icon" title="Unity3D" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original-wordmark.svg" />
-<img class="icon" title="Blender" src="https://www.blender.org/wp-content/uploads/2015/03/blender_logo_socket-1-1280x391.png" />
-<img class="icon" title="Photoshop" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" />
-
-### FRAMEWORKS
 <img class="icon" title="NodeJS" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" />
 <img class="icon" title="ThreeJS" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/threejs/threejs-original.svg" />
 
-### E-COMMERCE
+### Design & Games
+<img class="icon" title="Unity3D" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original-wordmark.svg" />
+<img class="icon" title="Unreal Engine" src="https://cdn.iconscout.com/icon/free/png-256/unreal-engine-2749375-2284765.png" />
+<img class="icon" title="Blender" src="https://findicons.com/files/icons/1007/crystal_like/256/blender.png" />
+<img class="icon" title="Photoshop" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" />
+
+### E-Commerce
 <img class="icon" title="Wordpress" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg" />
 <img class="icon" title="WooCommerce" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/woocommerce/woocommerce-original.svg" />
 <img class="icon" title="Magento" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/magento/magento-original.svg" />
+<img class="icon" title="Shopify" src="https://cdn.iconscout.com/icon/free/png-256/shopify-226579.png" />
