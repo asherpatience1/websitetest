@@ -27,19 +27,22 @@
 <article>{@html marked(markdown || '')}</article>
 
 <style>
-  article :global(img) {
+  article :global(.left, .right) {
     width: 400px;
     max-width: calc(100vw - 4rem);
   }
-  article :global(img.left) {
+  article :global(.left, .right) {
     float: left;
     margin-right: 1rem;
   }
-  article :global(img.right) {
+  article :global(.left, .right) {
     float: right;
     margin-left: 1rem;
   }
   article :global(.clear) {
     clear: both;
+  }
+  article :global(.icon) {
+    width: 100;
   }
 </style>
