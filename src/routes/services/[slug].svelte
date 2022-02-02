@@ -46,4 +46,12 @@
     width: 50px;
     max-width: 25vw;
   }
+  @media screen and (max-width: 768px) {
+    article :global(.clear-768) {
+      clear: both;
+    }
+    article :global(.left-768) {
+      float: left;
+    }
+  }
 </style>
