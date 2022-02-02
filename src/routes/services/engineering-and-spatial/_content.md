@@ -1,4 +1,4 @@
-<img class="right left-768" src="/services/eng.png" />
+<img class="right left-768 break-out" src="/services/eng.png" />
 <div class="clear-768"></div>
 
 With a number of in-house software developers that are also skilled in AEC and

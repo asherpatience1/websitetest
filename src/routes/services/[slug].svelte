@@ -46,6 +46,12 @@
     width: 50px;
     max-width: 25vw;
   }
+  @media screen and (min-width: 1110px) {
+    article :global(.right.break-out) {
+      margin-right: -176px;
+      width: 576px;
+    }
+  }
   @media screen and (max-width: 768px) {
     article :global(.clear-768) {
       clear: both;
