@@ -29,6 +29,8 @@
 <style>
   article :global(.left), article :global(.right) {
     width: 400px;
+  }
+  article :global(.left), article :global(.right), article :global(.center) {
     max-width: calc(100vw - 4rem);
   }
   article :global(.left) {
@@ -38,6 +40,12 @@
   article :global(.right) {
     float: right;
     margin-left: 1rem;
+  }
+  article :global(.center) {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    width: 600px;
   }
   article :global(.clear) {
     clear: both;
