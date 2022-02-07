@@ -13,7 +13,7 @@
       services: [
         { label: "Outsourcing and Augmentation", href: "outsourcing-and-augmentation" },
         { label: "Engineering and Spatial", href: "engineering-and-spatial" },
-        { label: "Game Development", href: "game-development" },
+        // { label: "Game Development", href: "game-development" },
       ],
     },
   ]

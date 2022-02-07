@@ -10,7 +10,7 @@ const content = {
   // software
   'outsourcing-and-augmentation': import('./outsourcing-and-augmentation/_content.md?raw'),
   'engineering-and-spatial': import('./engineering-and-spatial/_content.md?raw'),
-  'game-development': import('./game-development/_content.md?raw'),
+  // 'game-development': import('./game-development/_content.md?raw'),
 }
 
 const meta = {
@@ -22,7 +22,7 @@ const meta = {
   // software
   'outsourcing-and-augmentation': import('./outsourcing-and-augmentation/_meta.json'),
   'engineering-and-spatial': import('./engineering-and-spatial/_meta.json'),
-  'game-development': import('./game-development/_meta.json'),
+  // 'game-development': import('./game-development/_meta.json'),
 }
 
 // const markdowns = import.meta.globEager('./*/_content.md', { assert: { type: 'raw' }})
