@@ -45,5 +45,6 @@
   .gallery-img {
     border: solid 2px #014480;
     box-sizing: border-box;
+    cursor: pointer;
   }
 </style>
