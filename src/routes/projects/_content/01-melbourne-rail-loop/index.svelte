@@ -18,7 +18,6 @@
       src: `https://source.unsplash.com/random?${i}`
     })
   }
-
 </script>
 
 <p>
@@ -44,13 +43,15 @@
 </p>
 
 <p>
-  The project received the Award for Technical Excellence at the 2020 Asia-Pacific Spatial
-  Excellence Awards, and we are immensely proud to have worked in conjunction with the other
-  companies involved and play our part on the software front.
+  The project received the <a
+    href="https://www.apsea.org.au/winners-finalists/?winneryear=78&winnerregion=47#post-1259"
+    >Award for Technical Excellence</a
+  > at the 2020 Asia-Pacific Spatial Excellence Awards, and we are immensely proud to have worked in
+  conjunction with the other companies involved and play our part on the software front.
 </p>
 
 <Gallery {gallery} on:click={handleClick} />
 
 {#if selectedImage}
-  <Lightbox {...selectedImage} on:dismiss={() => selectedImage = null} />
+  <Lightbox {...selectedImage} on:dismiss={() => (selectedImage = null)} />
 {/if}
