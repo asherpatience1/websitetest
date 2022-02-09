@@ -2,17 +2,11 @@
   import Gallery from 'svelte-image-gallery'
   import { Lightbox } from '$lib'
 
-  type Image = {
-    src: string
-    alt: string
-    loading: string
-    class: string
-  }
+  import type { Image } from '$lib'
 
   let selectedImage: Image
 
   function handleClick(e: CustomEvent<Image>) {
-    console.log(e.detail)
     selectedImage = e.detail
   }
 
