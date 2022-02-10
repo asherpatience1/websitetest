@@ -13,9 +13,7 @@
 
   for (let i = 0; i < 6; ++i) {
     gallery.push({
-      title: `Image ${i}`,
-      description: `The image in position ${i}`,
-      src: `https://source.unsplash.com/random?${i}`
+      src: `/projects/melbourne-rail-loop/${String.fromCharCode(i + 97)}.png`
     })
   }
 </script>
