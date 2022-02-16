@@ -40,7 +40,7 @@
     "marked": "^4.0.11",
     "sib-api-v3-sdk": "^8.2.1",
     "svelte-cubed": "^0.2.1",
-    "svelte-typewriter": "^3.0.0-alpha.6",
+    "svelte-typewriter": "^3.0.0-alpha.11",
     "three": "^0.136.0"
   }
 }
