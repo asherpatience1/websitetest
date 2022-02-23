@@ -19,12 +19,6 @@
   }
 </script>
 
-<aside>
-  <p>
-    November 21, 2021
-  </p>
-</aside>
-
 <p>
   Diovec was contracted by Veris to create a Scan to BIM model of the Wilson Parking complex in Box
   Hill, Victoria, Australia.
@@ -65,11 +59,5 @@
     border: solid 2px #014480;
     box-sizing: border-box;
     cursor: pointer;
-  }
-  aside p {
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 0.7em;
-    color: #000a;
   }
 </style>

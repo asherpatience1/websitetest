@@ -19,7 +19,7 @@
 </script>
 
 <p>
-  In 2020, Diovec was contracted to create a software system to process data for the Melbourne
+  Diovec was contracted to create a software system to process data for the Melbourne
   Underground Rail Loop inspection project.
 </p>
 

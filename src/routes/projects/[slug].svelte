@@ -41,4 +41,19 @@
 
 <h2>{metadata.title}</h2>
 
+{#if metadata.date}
+  <aside>
+    <p>{metadata.date}</p>
+  </aside>
+{/if}
+
 <svelte:component this={module} />
+
+<style>
+    aside p {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.7em;
+    color: #000a;
+  }
+</style>
