@@ -31,7 +31,6 @@
 <script lang="ts">
   import type { SvelteComponent } from 'svelte'
 
-  export let file: string
   export let metadata: Record<string, string>
   export let module: typeof SvelteComponent
 </script>
