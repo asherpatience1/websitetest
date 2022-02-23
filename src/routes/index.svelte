@@ -62,12 +62,15 @@
     padding: 0 2rem;
   }
   h2 {
-    max-width: 36rem;
-    font-size: 2.5rem;
+    font-family: "JetBrains Mono";
+    max-width: 50rem;
+    font-size: 2.1rem;
     margin: 0 auto;
     text-align: center;
     color: #0177ff;
     font-weight: 600;
+    letter-spacing: -1.25px;
+    overflow: hidden;
   }
   h3 {
     text-transform: uppercase;
