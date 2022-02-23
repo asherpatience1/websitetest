@@ -35,7 +35,7 @@
 </svelte:head>
 
 <h2>Projects</h2>
-<p>Discover some of our highlight projects out of 200+ completed to date.</p>
+<p>Discover some highlights from our 200+ projects.</p>
 
 {#each projects as { href, meta }}
   <h3><a href="/projects/{href}">{meta.title}</a></h3>
