@@ -1,4 +1,4 @@
-﻿<img src="/services/mep-1.jpg" class="left">We provide MEP services design for
+﻿<img src="/services/mep-1.jpg" class="left">We provide MEP Services Design for
 commercial projects including: hospitals, offices, apartments, and multi-use
 buildings. We can create designs and design options for mechanical, electrical,
 plumbing, and fire services to suit concept design stages all the way through to
