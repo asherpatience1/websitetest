@@ -6,7 +6,7 @@ const Testimonial = () => {
             <div className="container">
                 <div className="diovec_cmnt">
                     <div className="diovec_cmnt_hd" data-aos="fade-right">
-                        <h3>“Diovec, our trusted outsourced development partner, has been a true asset to our company. Over the past 12 months, they have consistently exceeded expectations with their dedication, expertise, and top-notch results.”</h3>
+                        <h3>“Diovec, our trusted outsourcing development partner, has been a true asset to our company. Over the past 12 months, they have consistently exceeded expectations with their dedication, expertise, and top-notch results.”</h3>
                     </div>
                     <div className="diovec_cmnt_name" data-aos="fade-left">
                         <figure><img src="./images/client1.jpeg" alt="" /></figure>

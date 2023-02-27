@@ -18,7 +18,7 @@ const Form = () => {
         setIsDisabled(true);
         if (formData) {
             if (formData['name'] && formData['email'] && formData['phone']?.length > 10) {
-                axios.post('http://localhost:3001/api/', formData)
+                axios.post('/api/', formData)
                     .then(({ data }) => {
                         Object.keys(formData).map(x => {
                             setFormData({
@@ -28,7 +28,7 @@ const Form = () => {
                                 }
                             })
                         })
-                        setMessage("Thankyou for contacting divoec.");
+                        setMessage("Thankyou for contacting Diovec.");
                         setIsDisabled(false);
                         setIsSubmitted(false);
                     })

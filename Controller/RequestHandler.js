@@ -88,7 +88,7 @@ export const RequestHandler = async (req, res) => {
     sender: { email: SENDER_ADDR, name: SENDER_NAME },
     replyTo,
     to: [
-      { email: 'syedalisma1234@gmail.com', name: SENDER_NAME }
+      { email: SENDER_ADDR, name: SENDER_NAME }
     ],
     htmlContent,
     params: body,
